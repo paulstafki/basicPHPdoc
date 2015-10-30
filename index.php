@@ -15,7 +15,19 @@
         }
         print substr("Paul", (rand(0, strlen("Paul")-1)), 1);       //combination of string functions
 
-
+        $famFriends = array();
+        	// Create an array and push on the names
+        	array_push($famFriends, "Josh");
+        	array_push($famFriends, "Matt");
+        	array_push($famFriends, "Luke");
+        	array_push($famFriends, "Matt");
+        	array_push($famFriends, "Bob");
+        	array_push($famFriends, "Mikel");
+        	array_push($famFriends, "Jim");
+            // of your closest family and friends
+            sort($famFriends);
+        	// Sort the list
+            print strtoupper($famFriends[rand(0, (count($famFriends) - 1))]);
 
       ?>
     </p>
